@@ -204,7 +204,7 @@ class Crawler:
 
 
 if __name__ == "__main__":
-    # Crawler().crawl_page(url=CONFIG.FMOVIESTO_TVSHOWS_PAGE + "?page1")
+    Crawler().crawl_page(url=CONFIG.FMOVIESTO_TVSHOWS_PAGE + "?page1")
     Crawler().crawl_page(
         url=CONFIG.FMOVIESTO_MOVIES_PAGE + "?page1", post_type=CONFIG.TYPE_MOVIE
     )

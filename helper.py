@@ -213,6 +213,9 @@ class Helper:
             if len(stats_spans) > 0:
                 extra_info["Quality"] = stats_spans[0].text.strip("\n").strip()
 
+            if len(stats_spans) > 1:
+                extra_info["IMDb"] = stats_spans[1].text.strip("\n").strip().split()[0]
+
             if len(stats_spans) > 2:
                 extra_info["Duration"] = stats_spans[-1].text.strip("\n").strip()
 
